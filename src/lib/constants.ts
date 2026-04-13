@@ -116,26 +116,51 @@ export const DOC_CATEGORIES = [
   {
     title: "Komma igång",
     articles: [
-      { slug: "kom-igang", title: "Snabbstart" },
-      { slug: "skapa-konto", title: "Skapa konto" },
+      { slug: "kom-igang", title: "Kom igång" },
+      { slug: "oversikt", title: "Översikt / Startsida" },
+    ],
+  },
+  {
+    title: "Offerter",
+    articles: [
+      { slug: "skapa-offert", title: "Skapa offert med AI" },
+      { slug: "granska-offert", title: "Granska & redigera offert" },
+      { slug: "offertlista", title: "Offertlista" },
+      { slug: "offertdetaljer", title: "Offertdetaljer" },
+      { slug: "skicka-offert", title: "Skicka offert till kund" },
+      { slug: "kunden-godkanner", title: "Kunden godkänner offerten" },
     ],
   },
   {
     title: "Funktioner",
     articles: [
-      { slug: "skapa-offert", title: "Skapa en offert" },
-      { slug: "mallar", title: "Mallar & snabbval" },
-      { slug: "rot-avdrag", title: "ROT-avdrag" },
-      { slug: "kundhantering", title: "Kundhantering" },
-      { slug: "schemalagga", title: "Schemalägg projekt" },
       { slug: "bankid", title: "BankID-signering" },
+      { slug: "kundregister", title: "Kundregister" },
+      { slug: "projekt", title: "Projekt & schemaläggning" },
+      { slug: "rot-avdrag", title: "ROT-avdrag" },
     ],
   },
   {
-    title: "Integrationer",
+    title: "Inställningar",
     articles: [
-      { slug: "fortnox", title: "Fortnox" },
-      { slug: "visma", title: "Visma" },
+      { slug: "installningar", title: "Inställningar" },
+      { slug: "prislista", title: "Prislista" },
+      { slug: "regler", title: "Regler för AI" },
+      { slug: "mallar", title: "Offertmallar" },
+    ],
+  },
+  {
+    title: "Team & Integrationer",
+    articles: [
+      { slug: "team", title: "Team & inbjudningar" },
+      { slug: "integrationer", title: "Fortnox & Visma" },
+    ],
+  },
+  {
+    title: "Övrigt",
+    articles: [
+      { slug: "prenumeration", title: "Prenumeration & planer" },
+      { slug: "vanliga-fragor", title: "Vanliga frågor" },
     ],
   },
 ];
