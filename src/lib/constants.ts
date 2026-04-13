@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
-  { label: "Funktioner", href: "#funktioner" },
-  { label: "Skärmdumpar", href: "#screenshots" },
-  { label: "Priser", href: "#priser" },
-  { label: "Om oss", href: "#om-oss" },
+  { label: "Funktioner", href: "/#funktioner" },
+  { label: "Skärmdumpar", href: "/#screenshots" },
+  { label: "Priser", href: "/#priser" },
+  { label: "Om oss", href: "/#om-oss" },
   { label: "Dokumentation", href: "/docs" },
 ];
 

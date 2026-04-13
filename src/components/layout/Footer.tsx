@@ -29,12 +29,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#funktioner" className="text-sm hover:text-brand-gold transition-colors">
+                <Link href="/#funktioner" className="text-sm hover:text-brand-gold transition-colors">
                   Funktioner
                 </Link>
               </li>
               <li>
-                <Link href="#priser" className="text-sm hover:text-brand-gold transition-colors">
+                <Link href="/#priser" className="text-sm hover:text-brand-gold transition-colors">
                   Priser
                 </Link>
               </li>
@@ -63,7 +63,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#boka-demo" className="text-sm hover:text-brand-gold transition-colors">
+                <Link href="/#boka-demo" className="text-sm hover:text-brand-gold transition-colors">
                   Boka demo
                 </Link>
               </li>
