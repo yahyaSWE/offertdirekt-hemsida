@@ -24,7 +24,7 @@ export const FEATURES = [
   {
     title: "ROT-avdrag automatiskt",
     description:
-      "Beräkna ROT-avdrag direkt i offerten. 50% av arbetskostnaden, max 50 000 kr/år.",
+      "Beräkna ROT-avdrag direkt i offerten. 30% av arbetskostnaden, max 50 000 kr/år.",
     icon: "calculator",
   },
   {
