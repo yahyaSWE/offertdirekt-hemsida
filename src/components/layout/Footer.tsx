@@ -67,6 +67,11 @@ export default function Footer() {
                   Boka demo
                 </Link>
               </li>
+              <li>
+                <Link href="/integritetspolicy" className="text-sm hover:text-brand-gold transition-colors">
+                  Integritetspolicy
+                </Link>
+              </li>
             </ul>
           </div>
 
