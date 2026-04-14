@@ -5,7 +5,7 @@ const team = [
   {
     name: "Shahrayar Ranyai",
     role: "Medgrundare & Affärsutvecklare",
-    image: "/team/shahrayar.jpg",
+    image: "/team/shahrayar.png",
     quote: "Jag ser till att systemet löser era verkliga problem ute på fältet.",
     linkedin: "#",
   },
