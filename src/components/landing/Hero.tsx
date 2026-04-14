@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-brand-beige/50 to-brand-cream" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20 sm:pt-16 sm:pb-28">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 sm:pt-10 sm:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text content */}
           <div>
