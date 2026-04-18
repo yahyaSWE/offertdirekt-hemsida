@@ -1,10 +1,22 @@
+import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 const screenshots = [
-  { src: "/screenshots/screen1.png", alt: "Skapa ny mall" },
-  { src: "/screenshots/screen2.png", alt: "Redigera offert" },
-  { src: "/screenshots/screen3.png", alt: "Granska offert" },
-  { src: "/screenshots/screen4.png", alt: "Översikt" },
+  {
+    src: "/screenshots/2.png",
+    title: "Tydlig översikt",
+    subtitle: "",
+  },
+  {
+    src: "/screenshots/3.png",
+    title: "Beskriv jobbet",
+    subtitle: "AI sköter resten",
+  },
+  {
+    src: "/screenshots/4.png",
+    title: "Godkänn & skicka",
+    subtitle: "Signera med BankID\nIntegrera för automatisk faktura",
+  },
 ];
 
 export default function Screenshots() {
@@ -16,45 +28,40 @@ export default function Screenshots() {
           subtitle="En smidig upplevelse – från att skapa offerter till att följa upp projekt."
         />
 
-        {/* Scroll container */}
-        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 -mx-4 px-4 scrollbar-hide">
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {screenshots.map((screen) => (
-            <div
-              key={screen.alt}
-              className="snap-center flex-shrink-0 w-[260px] sm:w-[280px]"
-            >
-              <div className="rounded-[2.5rem] bg-brand-dark p-2.5 shadow-xl shadow-brand-dark/20">
-                <div className="rounded-[2rem] bg-brand-cream overflow-hidden aspect-[9/19.5] flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <svg
-                      className="w-12 h-12 mx-auto mb-3 text-brand-gold/30"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={1}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a1.5 1.5 0 001.5-1.5V4.5a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v15a1.5 1.5 0 001.5 1.5z"
-                      />
-                    </svg>
-                    <p className="text-xs text-brand-muted/60">{screen.alt}</p>
+            <div key={screen.title} className="flex flex-col items-center text-center">
+              {/* Title & subtitle */}
+              <h3 className="text-2xl sm:text-3xl font-bold font-[family-name:var(--font-heading)] mb-1">
+                {screen.title}
+              </h3>
+              {screen.subtitle && (
+                <p className="text-base sm:text-lg text-brand-muted mb-6 whitespace-pre-line">
+                  {screen.subtitle}
+                </p>
+              )}
+              {!screen.subtitle && <div className="mb-6" />}
+
+              {/* Phone mockup */}
+              <div className="relative w-[240px] sm:w-[280px]">
+                <div className="rounded-[2.5rem] bg-gradient-to-b from-gray-700 to-gray-900 p-[6px] shadow-2xl shadow-brand-dark/25">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-gray-900 rounded-b-2xl z-10" />
+                  <div className="rounded-[2.3rem] overflow-hidden bg-brand-cream">
+                    <Image
+                      src={screen.src}
+                      alt={screen.title}
+                      width={560}
+                      height={1218}
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
               </div>
-              <p className="text-center text-sm text-brand-muted mt-3 font-medium">
-                {screen.alt}
-              </p>
             </div>
           ))}
         </div>
       </div>
-
-      <style>{`
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-      `}</style>
     </section>
   );
 }
