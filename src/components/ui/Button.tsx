@@ -30,11 +30,19 @@ export default function Button({
   children,
   className = "",
 }: ButtonProps) {
+  const isExternal = href.startsWith("http");
+  const classes = `inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 ${variants[variant]} ${sizes[size]} ${className}`;
+
+  if (isExternal) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      className={`inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 ${variants[variant]} ${sizes[size]} ${className}`}
-    >
+    <Link href={href} className={classes}>
       {children}
     </Link>
   );

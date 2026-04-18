@@ -7,7 +7,9 @@ export const NAV_LINKS = [
 ];
 
 export const DEMO_URL = "#boka-demo";
-export const DOWNLOAD_URL = "#download";
+export const DOWNLOAD_URL = "https://play.google.com/store/apps/details?id=com.offertdirekt.app";
+export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.offertdirekt.app";
+export const APP_STORE_URL = "#download";
 
 export const FEATURES = [
   {
