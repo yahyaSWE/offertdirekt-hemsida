@@ -67,7 +67,7 @@ export default function Hero() {
                 <div className="rounded-[2.7rem] overflow-hidden bg-brand-cream">
                   <Image
                     src="/screenshots/1.jpeg"
-                    alt="OffertDirekt app"
+                    alt="OffertDirekt-appen visar startsida för hantverkare med offertöversikt"
                     width={640}
                     height={1386}
                     className="w-full h-auto"

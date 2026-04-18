@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --yes)",
+      "Bash(npx create-next-app@latest offertdirekt-temp --typescript --tailwind --eslint --app --src-dir --no-import-alias)",
+      "Bash(cp -r offertdirekt-temp/* .)",
+      "Bash(cp offertdirekt-temp/.gitignore .)",
+      "Bash(cp offertdirekt-temp/.eslintrc.json .)",
+      "Bash(cp -r offertdirekt-temp/.git .)",
+      "Bash(rm -rf offertdirekt-temp)",
+      "Bash(npm run:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(taskkill /PID 24732 /F)",
+      "Bash(taskkill //PID 24732 //F)"
+    ]
+  }
+}

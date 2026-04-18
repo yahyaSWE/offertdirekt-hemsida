@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { DOC_CATEGORIES } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: "Dokumentation",
+  description:
+    "Läs hur du använder OffertDirekt. Guider för att skapa offerter med röst, BankID-signering, ROT-avdrag, Fortnox- och Visma-integrationer m.m.",
+  alternates: {
+    canonical: "/docs/",
+  },
+};
 
 export default function DocsIndex() {
   return (

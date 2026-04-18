@@ -6,15 +6,31 @@ export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  return params.then(({ slug }) => {
-    const article = getArticle(slug);
-    if (!article) return { title: "Inte hittad – OffertDirekt" };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const article = getArticle(slug);
+  if (!article) {
     return {
-      title: `${article.title} – OffertDirekt Docs`,
-      description: `Lär dig om ${article.title} i OffertDirekt.`,
+      title: "Inte hittad",
+      robots: { index: false, follow: false },
     };
-  });
+  }
+  return {
+    title: article.title,
+    description: `Lär dig om ${article.title.toLowerCase()} i OffertDirekt. Del av kategorin ${article.category}.`,
+    alternates: {
+      canonical: `/docs/${slug}/`,
+    },
+    openGraph: {
+      title: `${article.title} – OffertDirekt Docs`,
+      description: `Guide: ${article.title} i OffertDirekt (${article.category}).`,
+      type: "article",
+    },
+  };
 }
 
 export default async function DocPage({

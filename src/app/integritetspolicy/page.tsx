@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Integritetspolicy – OffertDirekt",
-  description: "Så hanterar OffertDirekt dina personuppgifter.",
+  title: "Integritetspolicy",
+  description:
+    "Så hanterar OffertDirekt dina personuppgifter enligt GDPR. Läs vad vi samlar in, hur vi lagrar data och dina rättigheter.",
+  alternates: {
+    canonical: "/integritetspolicy/",
+  },
 };
 
 export default function PrivacyPolicy() {

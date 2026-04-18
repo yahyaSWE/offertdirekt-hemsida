@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EDE6D6"/>
+      <stop offset="1" stop-color="#F5F0E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Logo -->
+  <text
+    x="100"
+    y="200"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="96"
+    font-weight="400"
+    fill="#1A1A1A"
+  >O</text>
+  <text
+    x="165"
+    y="200"
+    font-family="Poppins, system-ui, sans-serif"
+    font-size="52"
+    font-weight="700"
+    fill="#B8860B"
+  >ffert</text>
+  <text
+    x="310"
+    y="200"
+    font-family="Poppins, system-ui, sans-serif"
+    font-size="52"
+    font-weight="700"
+    fill="#1A1A1A"
+  >Direkt</text>
+
+  <!-- Headline -->
+  <text
+    x="100"
+    y="340"
+    font-family="Poppins, system-ui, sans-serif"
+    font-size="72"
+    font-weight="700"
+    fill="#1A1A1A"
+  >Skapa offerter</text>
+  <text
+    x="100"
+    y="420"
+    font-family="Poppins, system-ui, sans-serif"
+    font-size="72"
+    font-weight="700"
+    fill="#B8860B"
+  >med din röst.</text>
+
+  <!-- Subtext -->
+  <text
+    x="100"
+    y="500"
+    font-family="Inter, system-ui, sans-serif"
+    font-size="30"
+    font-weight="400"
+    fill="#6B6B6B"
+  >AI-driven offerthantering · BankID-signering · ROT-avdrag</text>
+
+  <!-- Small tag -->
+  <rect x="100" y="540" width="280" height="50" rx="25" fill="#B8860B"/>
+  <text
+    x="240"
+    y="573"
+    text-anchor="middle"
+    font-family="Inter, system-ui, sans-serif"
+    font-size="22"
+    font-weight="600"
+    fill="#FFFFFF"
+  >Appen för hantverkare</text>
+</svg>
