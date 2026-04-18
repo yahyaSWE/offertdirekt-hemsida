@@ -3,17 +3,17 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const screenshots = [
   {
-    src: "/screenshots/2.png",
+    src: "/screenshots/2.jpeg",
     title: "Tydlig översikt",
     subtitle: "Se status på alla offerter",
   },
   {
-    src: "/screenshots/3.png",
+    src: "/screenshots/3.jpeg",
     title: "Beskriv jobbet",
     subtitle: "AI sköter resten",
   },
   {
-    src: "/screenshots/4.png",
+    src: "/screenshots/4.jpeg",
     title: "Godkänn & skicka",
     subtitle: "Signera med BankID",
   },
