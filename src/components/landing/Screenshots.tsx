@@ -5,7 +5,7 @@ const screenshots = [
   {
     src: "/screenshots/2.png",
     title: "Tydlig översikt",
-    subtitle: "",
+    subtitle: "Se status på alla offerter",
   },
   {
     src: "/screenshots/3.png",
@@ -15,7 +15,7 @@ const screenshots = [
   {
     src: "/screenshots/4.png",
     title: "Godkänn & skicka",
-    subtitle: "Signera med BankID\nIntegrera för automatisk faktura",
+    subtitle: "Signera med BankID",
   },
 ];
 
