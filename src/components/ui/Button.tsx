@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type ButtonProps = {
   href: string;
-  variant?: "primary" | "secondary" | "outline";
+  variant?: "primary" | "secondary" | "outline" | "white" | "white-outline";
   size?: "sm" | "md" | "lg";
   children: React.ReactNode;
   className?: string;
@@ -15,6 +15,10 @@ const variants = {
     "bg-brand-brown text-white hover:bg-brand-brown/90",
   outline:
     "border-2 border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-white",
+  white:
+    "bg-white text-brand-gold hover:bg-white/90 shadow-lg",
+  "white-outline":
+    "border-2 border-white text-white hover:bg-white/10",
 };
 
 const sizes = {

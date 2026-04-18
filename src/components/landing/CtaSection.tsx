@@ -20,19 +20,10 @@ export default function CtaSection() {
           varje vecka.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Button
-            href={DEMO_URL}
-            size="lg"
-            className="bg-white text-brand-gold hover:bg-white/90 shadow-lg"
-          >
+          <Button href={DEMO_URL} variant="white" size="lg">
             Boka en demo
           </Button>
-          <Button
-            href={DOWNLOAD_URL}
-            variant="outline"
-            size="lg"
-            className="border-white text-white hover:bg-white/10"
-          >
+          <Button href={DOWNLOAD_URL} variant="white-outline" size="lg">
             Ladda ner appen
           </Button>
         </div>
