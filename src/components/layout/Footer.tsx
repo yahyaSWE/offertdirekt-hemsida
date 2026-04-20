@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/constants";
+import { APP_STORE_URL, GOOGLE_PLAY_URL, DEMO_URL } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -21,6 +21,15 @@ export default function Footer() {
             <p className="text-sm text-white/60 leading-relaxed">
               Skapa professionella offerter snabbt och enkelt. Byggd för svenska hantverkare.
             </p>
+            <a
+              href="mailto:info@offertdirekt.app"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-white/80 hover:text-brand-gold transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+              info@offertdirekt.app
+            </a>
           </div>
 
           {/* Produkt */}
@@ -54,19 +63,27 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm hover:text-brand-gold transition-colors">
+                <Link href="/#om-oss" className="text-sm hover:text-brand-gold transition-colors">
                   Om oss
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm hover:text-brand-gold transition-colors">
+                <a
+                  href="mailto:info@offertdirekt.app"
+                  className="text-sm hover:text-brand-gold transition-colors"
+                >
                   Kontakt
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/#boka-demo" className="text-sm hover:text-brand-gold transition-colors">
+                <a
+                  href={DEMO_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-brand-gold transition-colors"
+                >
                   Boka demo
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/integritetspolicy" className="text-sm hover:text-brand-gold transition-colors">

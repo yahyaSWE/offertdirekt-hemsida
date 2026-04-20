@@ -6,7 +6,7 @@ export const NAV_LINKS = [
   { label: "Dokumentation", href: "/docs" },
 ];
 
-export const DEMO_URL = "#boka-demo";
+export const DEMO_URL = "https://calendar.app.google/4pP7eGKswZMUziFC6";
 export const DOWNLOAD_URL = "https://play.google.com/store/apps/details?id=com.offertdirekt.app";
 export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.offertdirekt.app";
 export const APP_STORE_URL = "#download";

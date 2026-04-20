@@ -47,12 +47,14 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
+            <a
               href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-brand-gold text-white px-5 py-2.5 text-sm font-semibold hover:bg-brand-gold-dark transition-colors shadow-md shadow-brand-gold/20"
             >
               Boka demo
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -88,13 +90,15 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
+            <a
               href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="block text-center rounded-full bg-brand-gold text-white px-5 py-3 font-semibold hover:bg-brand-gold-dark transition-colors mt-4"
             >
               Boka demo
-            </Link>
+            </a>
           </div>
         </div>
       )}
