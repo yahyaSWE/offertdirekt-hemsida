@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { NAV_LINKS, DEMO_URL } from "@/lib/constants";
+import { NAV_LINKS, DEMO_URL, LOGIN_URL, SIGNUP_URL } from "@/lib/constants";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +27,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-baseline">
-            <Image src="/logo.svg" alt="O" width={32} height={35} className="h-[1.45em] w-auto self-end relative bottom-[0.18em] -mr-[1px]" />
+            <Image
+              src="/logo.svg"
+              alt="O"
+              width={32}
+              height={35}
+              className="h-[1.45em] w-auto self-end relative bottom-[0.18em] -mr-[1px]"
+            />
             <span className="text-xl font-bold font-[family-name:var(--font-heading)] text-brand-gold">
               ffert
             </span>
@@ -37,7 +43,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -47,14 +53,26 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={DEMO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-brand-gold text-white px-5 py-2.5 text-sm font-semibold hover:bg-brand-gold-dark transition-colors shadow-md shadow-brand-gold/20"
-            >
-              Boka demo
-            </a>
+
+            {/* Auth actions */}
+            <div className="flex items-center gap-3 pl-2 border-l border-brand-beige">
+              <a
+                href={LOGIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-brand-dark/70 hover:text-brand-gold transition-colors"
+              >
+                Logga in
+              </a>
+              <a
+                href={SIGNUP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-brand-gold text-white px-5 py-2.5 text-sm font-semibold hover:bg-brand-gold-dark transition-colors shadow-md shadow-brand-gold/20"
+              >
+                Skapa konto
+              </a>
+            </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -90,15 +108,36 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href={DEMO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="block text-center rounded-full bg-brand-gold text-white px-5 py-3 font-semibold hover:bg-brand-gold-dark transition-colors mt-4"
-            >
-              Boka demo
-            </a>
+
+            <div className="pt-3 mt-3 border-t border-brand-beige space-y-3">
+              <a
+                href={LOGIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="block text-center rounded-full border-2 border-brand-gold text-brand-gold px-5 py-3 font-semibold hover:bg-brand-gold/10 transition-colors"
+              >
+                Logga in
+              </a>
+              <a
+                href={SIGNUP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="block text-center rounded-full bg-brand-gold text-white px-5 py-3 font-semibold hover:bg-brand-gold-dark transition-colors"
+              >
+                Skapa konto
+              </a>
+              <a
+                href={DEMO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="block text-center text-sm font-medium text-brand-dark/70 hover:text-brand-gold py-2"
+              >
+                Eller boka en demo
+              </a>
+            </div>
           </div>
         </div>
       )}

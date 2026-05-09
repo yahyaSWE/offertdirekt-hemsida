@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import { DEMO_URL, DOWNLOAD_URL } from "@/lib/constants";
+import { DEMO_URL, DOWNLOAD_URL, SIGNUP_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
@@ -33,12 +33,23 @@ export default function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href={DOWNLOAD_URL} size="lg">
-                Ladda ner appen
+              <Button href={SIGNUP_URL} size="lg">
+                Skapa konto – gratis
               </Button>
               <Button href={DEMO_URL} variant="outline" size="lg">
                 Boka demo
               </Button>
+            </div>
+
+            <div className="mt-3 text-sm text-brand-muted">
+              <a
+                href={DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-gold transition-colors"
+              >
+                Eller ladda ner appen för Android &rarr;
+              </a>
             </div>
 
             <div className="mt-8 flex items-center gap-6 text-sm text-brand-muted">

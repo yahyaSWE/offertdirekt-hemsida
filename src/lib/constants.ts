@@ -11,6 +11,10 @@ export const DOWNLOAD_URL = "https://play.google.com/store/apps/details?id=com.o
 export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.offertdirekt.app";
 export const APP_STORE_URL = "#download";
 
+export const WEB_APP_URL = "https://web.offertdirekt.se";
+export const LOGIN_URL = "https://web.offertdirekt.se/login";
+export const SIGNUP_URL = "https://web.offertdirekt.se/signup";
+
 export const FEATURES = [
   {
     title: "Röst till offert",
@@ -65,6 +69,7 @@ export const FEATURES = [
 export const PRICING_TIERS = [
   {
     name: "Starter",
+    slug: "starter",
     price: 590,
     description: "Perfekt för dig som vill komma igång snabbt.",
     features: [
@@ -77,6 +82,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "Basic",
+    slug: "basic",
     price: 990,
     description: "För dig som vill ha juridisk trygghet.",
     features: [
@@ -88,6 +94,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "Pro",
+    slug: "pro",
     price: 1490,
     description: "Mest populär – fullständig automatisering.",
     features: [
@@ -101,6 +108,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "Team",
+    slug: "team",
     price: 2490,
     description: "Pro för hela teamet.",
     features: ["Allt i Pro", "Upp till 5 användare", "Delad kundlista"],
@@ -108,6 +116,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "Business",
+    slug: "business",
     price: 4990,
     description: "För större företag med fler användare.",
     features: ["Allt i Pro", "Upp till 10 användare", "Delad kundlista"],

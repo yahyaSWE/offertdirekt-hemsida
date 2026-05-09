@@ -1,7 +1,9 @@
 import Button from "./Button";
+import { SIGNUP_URL } from "@/lib/constants";
 
 type PricingCardProps = {
   name: string;
+  slug: string;
   price: number;
   description: string;
   features: string[];
@@ -10,11 +12,13 @@ type PricingCardProps = {
 
 export default function PricingCard({
   name,
+  slug,
   price,
   description,
   features,
   highlighted = false,
 }: PricingCardProps) {
+  const signupHref = `${SIGNUP_URL}?plan=${slug}`;
   return (
     <div
       className={`relative flex flex-col rounded-2xl p-8 min-w-[280px] transition-all duration-200 ${
@@ -69,7 +73,7 @@ export default function PricingCard({
         ))}
       </ul>
       <Button
-        href="#boka-demo"
+        href={signupHref}
         variant={highlighted ? "outline" : "primary"}
         className={
           highlighted

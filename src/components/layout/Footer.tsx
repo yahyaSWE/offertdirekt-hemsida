@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { APP_STORE_URL, GOOGLE_PLAY_URL, DEMO_URL } from "@/lib/constants";
+import { APP_STORE_URL, GOOGLE_PLAY_URL, DEMO_URL, LOGIN_URL, SIGNUP_URL } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -73,6 +73,26 @@ export default function Footer() {
                   className="text-sm hover:text-brand-gold transition-colors"
                 >
                   Kontakt
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SIGNUP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-brand-gold transition-colors"
+                >
+                  Skapa konto
+                </a>
+              </li>
+              <li>
+                <a
+                  href={LOGIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-brand-gold transition-colors"
+                >
+                  Logga in
                 </a>
               </li>
               <li>

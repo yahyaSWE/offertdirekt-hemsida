@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import { DEMO_URL, DOWNLOAD_URL } from "@/lib/constants";
+import { DEMO_URL, SIGNUP_URL } from "@/lib/constants";
 
 export default function CtaSection() {
   return (
@@ -20,11 +20,11 @@ export default function CtaSection() {
           varje vecka.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Button href={DEMO_URL} variant="white" size="lg">
-            Boka en demo
+          <Button href={SIGNUP_URL} variant="white" size="lg">
+            Skapa konto – gratis
           </Button>
-          <Button href={DOWNLOAD_URL} variant="white-outline" size="lg">
-            Ladda ner appen
+          <Button href={DEMO_URL} variant="white-outline" size="lg">
+            Boka en demo
           </Button>
         </div>
       </div>
