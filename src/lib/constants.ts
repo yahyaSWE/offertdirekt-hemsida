@@ -11,9 +11,9 @@ export const DOWNLOAD_URL = "https://play.google.com/store/apps/details?id=com.o
 export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.offertdirekt.app";
 export const APP_STORE_URL = "#download";
 
-export const WEB_APP_URL = "https://web.offertdirekt.se";
-export const LOGIN_URL = "https://web.offertdirekt.se/login";
-export const SIGNUP_URL = "https://web.offertdirekt.se/signup";
+export const WEB_APP_URL = "https://web.offertdirekt.app";
+export const LOGIN_URL = "https://web.offertdirekt.app";
+export const SIGNUP_URL = "https://web.offertdirekt.app/register";
 
 export const FEATURES = [
   {
